@@ -1,0 +1,15 @@
+
+# Core
+numpy==2.2.2
+pandas>=2.2.2
+scikit-learn>=1.5.0
+
+# Modeling
+catboost==1.2.8
+joblib>=1.4.2
+
+# UI
+gradio>=4.36.0
+
+# Utils
+gdown>=5.2.0
