@@ -26,5 +26,16 @@
 # установка зависимостей
 pip install -r requirements.txt
 
+
+
+## Training pipeline
+
+**Файл:** `train_pipeline.py`  
+Запускает полный цикл обучения Efficiency Index (EI): загрузка данных с Google Drive, очистка и фичи (логарифмы, sRank, recency), расчёт таргета (ΔlogO/ΔlogP) и локальной нормализации по конкурентам, извлечение латентных факторов (NMF), обучение CatBoost Quantile моделей (p25/p50/p75), сохранение артефактов.
+
+**Запуск:**
+pip install -r requirements.txt
+python train_pipeline.ipynb
+
 # запуск UI
-python calculator_ui.py
+python calculator_ui.ipynb
